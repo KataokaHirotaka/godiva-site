@@ -1,0 +1,32 @@
+.header {
+  background: #333;
+  @at-root {
+    .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 95px;
+    }
+    .hamburger_menu_btn {
+      position: relative;
+      span {
+        width: 20px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+      }
+      span:first-child {
+        top: 0;
+      }
+      span:nth-child(2) {
+        top: 8px;
+      }
+      span:last-child {
+        top: 16px;
+      }
+    }
+    .header_logo {
+      width: 20%;
+    }
+  }
+}

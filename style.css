@@ -1,0 +1,43 @@
+.header {
+  background: #333;
+}
+
+.header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 95px;
+}
+
+.hamburger_menu_btn {
+  position: relative;
+}
+
+.hamburger_menu_btn span {
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+}
+
+.hamburger_menu_btn span:first-child {
+  top: 0;
+}
+
+.hamburger_menu_btn span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger_menu_btn span:last-child {
+  top: 16px;
+}
+
+.header_logo {
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */
