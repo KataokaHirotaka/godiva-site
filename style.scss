@@ -1,13 +1,21 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
 .header {
   background: #333;
   @at-root {
     .header_content {
+      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
       height: 95px;
     }
     .hamburger_menu_btn {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
       position: relative;
       span {
         width: 20px;
@@ -27,6 +35,72 @@
     }
     .header_logo {
       width: 20%;
+      max-width: 90px;
+      position: absolute;
+      left: calc(50% - 45px);
+    }
+    .header_link {
+      margin-right: 20px;
+      position: absolute;
+      right: 10px;
+      a {
+        color: #fff;
+        font-size: 10px;
+      }
+      
+      img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.topic_wrapper {
+  margin: 10px 0px;
+  .topic {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    left: calc(50% - 143.22px);
+    &:before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: calc(50% - 7px);
+      border-top: 7px solid transparent;
+      border-left: 7px solid chocolate;
+      border-bottom: 7px solid transparent;
+    }
+  }
+}
+
+.breadCrumb {
+  height: 100%;
+  padding: 10px 20px;
+  a {
+    margin-right: 20px;
+    position: relative;
+    span {
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      left: 43px;
+    }
+  }
+}
+
+.main_panel {
+  width: 100%;
+  @at-root {
+    .panel {
+      img {
+        width: 100%;
+        transition: 1.8s;
+        position: absolute;
+      }
     }
   }
 }

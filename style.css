@@ -1,20 +1,28 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .header {
   background: #333;
 }
 
 .header_content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   height: 95px;
 }
 
 .hamburger_menu_btn {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
   position: relative;
 }
 
@@ -39,5 +47,75 @@
 
 .header_logo {
   width: 20%;
+  max-width: 90px;
+  position: absolute;
+  left: calc(50% - 45px);
+}
+
+.header_link {
+  margin-right: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.header_link a {
+  color: #fff;
+  font-size: 10px;
+}
+
+.header_link img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.topic_wrapper {
+  margin: 10px 0px;
+}
+
+.topic_wrapper .topic {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  left: calc(50% - 143.22px);
+}
+
+.topic_wrapper .topic:before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 7px);
+  border-top: 7px solid transparent;
+  border-left: 7px solid chocolate;
+  border-bottom: 7px solid transparent;
+}
+
+.breadCrumb {
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.breadCrumb a {
+  margin-right: 20px;
+  position: relative;
+}
+
+.breadCrumb a span {
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 43px;
+}
+
+.main_panel {
+  width: 100%;
+}
+
+.panel img {
+  width: 100%;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
